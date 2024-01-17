@@ -1,0 +1,167 @@
+<html __fvdsurfcanyoninserted="1" class="
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+    ">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- 0. Phần icon của website (thay đổi link đến icon nếu bạn muốn sửa nó) -->
+    <link rel="shortcut icon" type="image/png" href="./birthdayCake.png" />
+
+    <!-- 1. Đây là phần title của website -->
+    <title>Happy Birthday</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        window.open = function () { };
+        window.print = function () { };
+        // Support hover state for mobile.
+        if (false) {
+            window.ontouchstart = function () { };
+        }
+    </script>
+    <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <meta content="clickberry-extension-here" />
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css" />
+    <div class="container">
+        <!-- 2. Dòng chữ Happy Birthday
+            Nếu bạn muốn thêm chữ vào thì phải thay đổi css tương ứng cho nó -->
+        <div class="balloon">
+            <div><span>H</span></div>
+            <div><span>A</span></div>
+            <div><span>P</span></div>
+            <div><span>P</span></div>
+            <div><span>Y</span></div>
+            <div><span>B</span></div>
+            <div><span>I</span></div>
+            <div><span>R</span></div>
+            <div><span>T</span></div>
+            <div><span>H</span></div>
+            <div><span>D</span></div>
+            <div><span>A</span></div>
+            <div><span>Y</span></div>
+        </div>
+        <div class="avatar">
+            <!-- 3. Avatar của người bạn muốn gởi lời chúc -->
+            <img src="./images/7beiu7.jpg" alt="" class="avatar__img" onclick="showMessage()" />
+            <!-- 4. Tên của người đó -->
+            <!-- <h1 onclick="showMessage()" class="greeting avatar__title">Lời nhắn❤️️</h1>
+            <h1 onclick="showMessage()" class="avatar__title">Bé Zuiii❤️️</h1> -->
+            <button class="btn btn-primary avatar__title btn_modal" data-bs-target="#exampleModalToggle"
+                data-bs-toggle="modal">Lời
+                chúc❤️</button>
+        </div>
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Lời chúc❤️</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        "❤️️Bé Zuiii ơi, hôm nay là sinh nhật em, ngày này năm sau cũng là sinh nhật em và các năm
+                        sau nữa sau nữa cũng là sinh nhật em. Nhưng anh mong điều tốt lành sẽ đến với em mỗi ngày, chúc
+                        em ngày càng xinh đẹp, hạnh phúc, giỏi giang và ngày càng yêu anh nhiều hơn nha! Anh yêu em
+                        nhiều nhiều lắm!❤️️❤️️❤️️"
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2"
+                            data-bs-toggle="modal">Open Videos❤️</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal video_modal fade" id="exampleModalToggle2" aria-hidden="true"
+            aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Videos❤️</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="slideshow">
+                            <div class="content">
+                                <div class="content-carousel">
+                                    <figure class="shadow">
+                                        <img class="img-fluid" src="./images/1beiu.jpg">
+                                    </figure>
+                                    <figure class="shadow">
+                                        <img class="img-fluid" src="./images/2beiu.jpg">
+                                    </figure>
+                                    <figure class="shadow">
+                                        <img class="img-fluid" src="./images/3beiu.jpg">
+                                    </figure>
+                                    <figure class="shadow">
+                                        <img class="img-fluid" src="./images/4beiu.jpg">
+                                    </figure>
+                                    <figure class="shadow">
+                                        <img class="img-fluid" src="./images/5beiu.jpg">
+                                    </figure>
+                                    <figure class="shadow">
+                                        <img class="img-fluid" src="./images/6beiu6.jpg">
+                                    </figure>
+                                    <figure class="shadow">
+                                        <img class="img-fluid" src="./images/7beiu7.jpg">
+                                    </figure>
+                                    <figure class="shadow">
+                                        <img class="img-fluid" src="./images/8beiu8.jpg">
+                                    </figure>
+                                    <figure class="shadow">
+                                        <img class="img-fluid" src="./images/9beiu9.jpg">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Lời
+                            chúc❤️</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 5. Phần nhạc -->
+        <audio id="player" autoplay loop></audio>
+        <source src="./music.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    <script>
+        // if (document.location.search.match(/type=embed/gi)) {
+        //     window.parent.postMessage("resize", "*");
+        // }
+        // function showMessage() {
+        //     // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
+        //     swal({
+        //         title: "Lời nhắn", // Tiêu đề của popup
+        //         text: "❤️️Em yêu của anh, hôm nay là sinh nhật em, ngày này năm sau cũng là sinh nhật em và các năm sau nữa sau nữa cũng là sinh nhật em. Nhưng anh mong điều tốt lành sẽ đến với anh mỗi ngày và hãy để anh được ở bên em trong suốt cuộc đời này, để được yêu thương và chăm sóc cho em. Yêu em nhiều nhiều lắm!❤️️❤️️❤️️", // Nội dung lời nhắn
+        //         button: {
+        //             text: "❤️️",
+        //         },
+        //     });
+        // }
+        // document.getElementsByClassName("swal-button").onclick = function () {
+        //     console.log("click.....")
+        // }
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
