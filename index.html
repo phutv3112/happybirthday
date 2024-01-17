@@ -25,7 +25,7 @@
             window.ontouchstart = function () { };
         }
     </script>
-    <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
+    <!-- <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
@@ -61,7 +61,7 @@
             <!-- 4. Tên của người đó -->
             <!-- <h1 onclick="showMessage()" class="greeting avatar__title">Lời nhắn❤️️</h1>
             <h1 onclick="showMessage()" class="avatar__title">Bé Zuiii❤️️</h1> -->
-            <button class="btn btn-primary avatar__title btn_modal" data-bs-target="#exampleModalToggle"
+            <button id="btn-play" class="btn btn-primary avatar__title btn_modal" data-bs-target="#exampleModalToggle"
                 data-bs-toggle="modal">Lời
                 chúc❤️</button>
         </div>
@@ -139,11 +139,18 @@
 
 
         <!-- 5. Phần nhạc -->
-        <audio id="player" autoplay loop></audio>
+        <!-- <audio id="player" autoplay loop></audio>
         <source src="./music.mp3" type="audio/mp3">
+        </audio> -->
+        <audio id="player" class="audio" controls autoplay>
+            <source src="./music.mp3" type="audio/mpeg">
         </audio>
     </div>
     <script>
+        document.getElementById("btn-play").onclick = function () {
+            document.getElementById('player').play();
+        }
+
         // if (document.location.search.match(/type=embed/gi)) {
         //     window.parent.postMessage("resize", "*");
         // }
